@@ -1,0 +1,7 @@
+Nav bar includes:
+
+-About
+-Education
+-Projects
+-Certification
+

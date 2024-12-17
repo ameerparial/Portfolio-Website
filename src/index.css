@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/public/fonts/JetBrainsMono-VariableFont_wght.ttf")
+    format("truetype");
+  /* Additional font styles like font-weight and font-style can be specified here */
+}
+:root {
+  --bgcolor: black;
+  --text-color: white;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--bgcolor);
+  color: var(--text-color);
+  font-family: "JetBrains Mono";
+  transition: all 0.5s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

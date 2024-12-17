@@ -1,0 +1,54 @@
+.hoverElement {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.first-row {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.third-row {
+  color: #a2a3a5;
+}
+.my-icon {
+  text-decoration: none;
+}
+.my-icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: var(--bgcolor);
+  background-color: var(--text-color);
+  transform: rotate(45deg);
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1.2em;
+}
+
+.hoverElement:hover {
+  color: #18ca87;
+  cursor: pointer;
+}
+.hoverElement:hover .my-icon i {
+  transform: rotate(0deg);
+  background-color: #18ca87;
+  /* color: white; */
+}
+.bottom-line {
+  position: relative;
+  padding-bottom: 10px; /* Space below content */
+}
+
+.bottom-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 2px; /* Height of the bottom line */
+  background-color: #49505d; /* Color of the bottom line */
+}

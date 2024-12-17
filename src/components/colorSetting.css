@@ -1,0 +1,19 @@
+.color-setting {
+  width: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-setting:hover {
+  width: 35px;
+  background-color: yellow;
+  transition: all 0.5s;
+}
+.color-setting .icon {
+  display: none;
+  color: var(--bgcolor);
+}
+.color-setting:hover .icon {
+  display: block;
+}

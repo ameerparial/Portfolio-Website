@@ -1,0 +1,63 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.tnavbar {
+  display: flex;
+  align-items: center;
+}
+.tnavbar li {
+  list-style: none;
+  position: relative;
+}
+.tnavbar li .nav-link {
+  text-decoration: none;
+  margin: 0px 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.tnavbar li .nav-link:hover,
+.icon i {
+  color: #18ca87;
+}
+.tnavbar li .nav-link:hover::after,
+.mactive-link::after {
+  content: "";
+  height: 2px;
+  width: 40%;
+  background-color: #18ca87;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+.icon {
+  cursor: pointer;
+  text-align: end;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .tnavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    background-color: #49505d;
+    color: #18ca87;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+  }
+  .tnavbar li {
+    margin: 10px;
+  }
+  .tnavbar.active {
+    display: none;
+  }
+}

@@ -5,8 +5,8 @@
   /* Additional font styles like font-weight and font-style can be specified here */
 }
 :root {
-  --bgcolor: black;
-  --text-color: white;
+  --bgcolor: white;
+  --text-color: black;
 }
 
 body {

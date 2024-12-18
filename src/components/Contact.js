@@ -38,6 +38,8 @@ const Form = () => {
   function sendEmail(e) {
     e.preventDefault();
     setLoading(true);
+    console.log(process.env.PUBLIC_URL);
+
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -55,7 +57,7 @@ const Form = () => {
         },
         (error) => {
           alert("Failed to send message.");
-          console.error(error.text);
+          console.log(error.text);
           setLoading(false);
         }
       );

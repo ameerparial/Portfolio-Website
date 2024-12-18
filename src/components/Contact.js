@@ -38,8 +38,6 @@ const Form = () => {
   function sendEmail(e) {
     e.preventDefault();
     setLoading(true);
-    console.log(process.env.REACT_APP_PUBLIC_KEY);
-
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
